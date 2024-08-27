@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./images/background.jpeg'); /* Sesuaikan dengan gambar background Anda */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin: 5px 0 15px 0;
+    font-size: 24px;
+}
+.container img + h2 {
+    margin-top: 2em; /* Jarak 2 kali enter diukur dengan unit em */
+}
+
+.logo-image {
+    width: 42.56px;               
+    height: 36.34px; 
+    /* height: 40px;
+    width: 50px;*/
+} 
+
+.chill-image {
+    width: 109px;              
+    height: 38px; 
+    /* height: 35px;
+    width: 105px; */
+}
+
+.container input[type="text"],
+.container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 40px;
+    background-color: #333;
+    color: white;
+}
+
+.container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1db954;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.container input[type="submit"]:hover {
+    background-color: #1aa34a;
+}
+
+.options {
+    margin: 15px 0;
+    display: flex;
+    font-size: 12px;
+    /* justify-content: space-between; */
+    
+}
+
+.options a {
+    color: #1db954;
+    text-decoration: none;
+    margin-left: 110px; /* Atur jarak sesuai keinginan antara teks dan tautan */
+}
+
+.options a:first-of-type {
+    margin-left: 5px; /* Atur jarak sesuai keinginan antara teks dan tautan */
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+form label {
+    display: block;
+    /* margin-bottom: 0px; Jarak antara label dan input */
+    text-align: left;
+}
+
+
+.google-login {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.google-login img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+nav {
+    background-color: #f2f2f2;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Untuk layar yang lebih kecil (ponsel) */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .google-login img {
+        width: 18px;
+        margin-right: 8px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .container input[type="text"],
+    .container input[type="password"] {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .container input[type="submit"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
